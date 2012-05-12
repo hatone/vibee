@@ -3,32 +3,16 @@ Logfile initialized
 [DEBUG] /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/builder.py install vibee /Developer/android-sdk-macosx /Users/hatone/Documents/Titanium Studio Workspace/vibee net.hakamastyle.app.vibee 4
 [INFO] Titanium SDK version: 1.7.5 (11/02/11 17:00 ab20af7)
 [DEBUG] Waiting for device to be ready ...
-[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 2 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-<<<<<<< HEAD
-[DEBUG] waited 0.012702 seconds on emulator to get ready
+[DEBUG] waited 0.012714 seconds on emulator to get ready
 [DEBUG] net.hakamastyle.app.vibee installed? False
 [INFO] Copying project resources..
-[INFO] Detected tiapp.xml change (or assets deleted), forcing full re-build...
-[TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/android/appicon.png => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/appicon.png
-[TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/android/default.png => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/default.png
-[TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/app.js => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/app.js
-[TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/connect.js => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/connect.js
-[TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/hoge.js => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/hoge.js
-[TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/KS_nav_ui.png => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/KS_nav_ui.png
-[TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/KS_nav_views.png => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/KS_nav_views.png
-=======
-[DEBUG] waited 0.049805 seconds on emulator to get ready
-[DEBUG] net.hakamastyle.app.vibee installed? False
-[INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/app.js => /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/app.js
-[TRACE] COPYING MODIFIED FILE: /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/connect.js => /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/connect.js
->>>>>>> 789c8fa8c7824b8675338e0f708918b5d88d8101
+[TRACE] COPYING MODIFIED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/app.js => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/app.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] found special platform files dir = /Users/hatone/Documents/Titanium Studio Workspace/vibee/platform/android
 [INFO] Copying platform-specific files ...
-[DEBUG] app stylesheet => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/ApplicationStylesheet.java
 [DEBUG] copying app icon: /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/appicon.png
 [DEBUG] generating theme.xml
 [DEBUG] found drawable-long-land-hdpi splash screen at /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/android/images/res-long-land-hdpi/default.png
@@ -53,12 +37,11 @@ Logfile initialized
 [DEBUG] copying /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/android/images/res-notlong-port-mdpi/default.png splash screen to /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/res/drawable-notlong-port-mdpi/background.png
 [DEBUG] found splash screen at /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/default.png
 [TRACE] Writing out AndroidManifest.xml
-[DEBUG] adding /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/ApplicationStylesheet.java to javac build list
 [DEBUG] adding /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/R.java to javac build list
 [DEBUG] adding /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeActivity.java to javac build list
 [DEBUG] adding /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeAppInfo.java to javac build list
 [DEBUG] adding /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeApplication.java to javac build list
-[DEBUG] Building Java Sources: "/Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/ApplicationStylesheet.java" "/Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/R.java" "/Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeActivity.java" "/Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeAppInfo.java" "/Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeApplication.java"
+[DEBUG] Building Java Sources: "/Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/R.java" "/Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeActivity.java" "/Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeAppInfo.java" "/Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeApplication.java"
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/app-unsigned.apk
@@ -107,12 +90,8 @@ Logfile initialized
 [DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
 [DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
 [DEBUG] Waiting for device to be ready ...
-[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 2 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-<<<<<<< HEAD
-[DEBUG] waited 0.013142 seconds on emulator to get ready
-=======
-[DEBUG] waited 0.055128 seconds on emulator to get ready
->>>>>>> 789c8fa8c7824b8675338e0f708918b5d88d8101
+[DEBUG] waited 0.013058 seconds on emulator to get ready
 [INFO] Installing application on emulator
 [INFO] Application installed. Launch from drawer on Home Screen

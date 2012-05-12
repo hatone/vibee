@@ -23,13 +23,37 @@ setButton = Ti.UI.createButton
 setButton.addEventListener 'click',(e)->
   dialog = Titanium.UI.createAlertDialog()
   dialog.setTitle('alett test')
-  dialog.setMessage('message')
+  dialog.setMessage(nameField.value+""+ channelField.value)
   dialog.show()
   connectWindow = Ti.UI.createWindow
     title: 'Sleeping'
     url: 'connect.js'
+  connectWindow.name = nameField.value
+  connectWindow.channel = channelField.value
   tab1.open(connectWindow)
 
-win1.add(setButton)
+#setup imput
+NAME_TOP = 200 
+CHANNEL_TOP = 300 
+WIDTH = 400 
 
+nameField = Ti.UI.createTextField
+  top:NAME_TOP
+  width:WIDTH
+  height:100
+  hintText:'なまえ'
+  borderStyle:Titanium.UI.INPUT_BORDERSTYLE_BEZEL
+
+
+channelField = Ti.UI.createTextField
+  top:CHANNEL_TOP
+  width:WIDTH
+  height:100
+  hintText:'あいことば'
+  borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDER
+
+
+win1.add(setButton)
+win1.add(nameField)
+win1.add(channelField)
 tabGroup.open()
