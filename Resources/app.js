@@ -39,7 +39,7 @@ setButton.addEventListener('click', function(e) {
 });
 
 logoView = Ti.UI.createImageView({
-  image: "../vibee/Resources/android/logotest.png",
+  image: "images/logotest.png",
   top: 10
 });
 

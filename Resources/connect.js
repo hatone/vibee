@@ -1,15 +1,9 @@
-var readBuffer, readCallback, socket, textarea, win;
+var readBuffer, readCallback, socket, win;
 
 win = Titanium.UI.createWindow({
   title: 'connect window',
   backgroundColor: '#fff'
 });
-
-textarea = Titanium.UI.createTextArea({
-  value: Ti.App.userName
-});
-
-win.add(textarea);
 
 win.open();
 
@@ -23,7 +17,6 @@ readBuffer = Titanium.createBuffer({
 readCallback = function(e) {
   var commands, signs, str;
   if (e.bytesProcessed === -1) {
-    textarea.value += ">>Recieved socket closed \n";
     socket.close();
     return;
   }
@@ -31,8 +24,6 @@ readCallback = function(e) {
     source: readBuffer,
     length: e.bytesProcessed
   });
-  textarea.value = e.bytesProcessed + "> " + str + "\n" + textarea.value;
-  textarea.value = Ti.App.channelName + "-cname\n" + textarea.value;
   str.replace("\n", "");
   commands = str.split(" ");
   if (commands.length > 4 && commands[0] === 'VIBEE' && commands[1] === Ti.App.channelName) {
@@ -51,14 +42,11 @@ socket = Ti.Network.Socket.createTCP({
   connected: function(e) {
     var data;
     Ti.Stream.read(socket, readBuffer, readCallback);
-    textarea.value += ">> Connected to host" + socket.host + "\n";
     return data = Ti.createBuffer({
       value: "VIBEE " + Ti.App.channelName + " " + Ti.App.userName + " VIBRATE 1000|100|1000|100"
     });
   },
-  closed: function(e) {
-    return textarea.value += ">> Socket closed";
-  }
+  closed: function(e) {}
 });
 
 socket.connect();
