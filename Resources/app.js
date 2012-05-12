@@ -1,4 +1,4 @@
-var CHANNEL_TOP, NAME_TOP, WIDTH, channelField, logoView, nameField, setButton, tab1, tabGroup, win1;
+var CHANNEL_TOP, NAME_TOP, WIDTH, channelField, logoView, nameField, s, setButton, tab1, tabGroup, win1;
 
 Titanium.UI.setBackgroundColor('#fff');
 
@@ -42,6 +42,12 @@ logoView = Ti.UI.createImageView({
   image: "images/logotest.png",
   top: 10
 });
+
+s = Ti.Media.createSound({
+  url: "sounds/0.wav"
+});
+
+s.play();
 
 NAME_TOP = 200;
 

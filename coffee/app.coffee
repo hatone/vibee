@@ -32,6 +32,11 @@ logoView = Ti.UI.createImageView
   image:"images/logotest.png"
   top:10
 
+#sound
+s = Ti.Media.createSound
+  url: "sounds/0.wav"
+s.play()
+  
 #setup imput
 NAME_TOP = 200 
 CHANNEL_TOP = 300 
