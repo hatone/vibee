@@ -2,6 +2,8 @@ userName = 'demo-user'
 channelName = 'demo'
 Titanium.UI.setBackgroundColor('#fff'); 
 
+
+
 tabGroup = Ti.UI.createTabGroup()
 win1 = Ti.UI.createWindow
   title: 'vibee'
