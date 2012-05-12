@@ -26,6 +26,11 @@ setButton.addEventListener 'click',(e)->
   Ti.App.Properties.setString('channelName', channelField.value);
   tab1.open(connectWindow)
 
+#image
+logoView = Ti.UI.createImageView
+  image:"../vibee/Resources/android/logotest.png"
+  top:10
+
 #setup imput
 NAME_TOP = 200 
 CHANNEL_TOP = 300 
@@ -47,7 +52,7 @@ channelField = Ti.UI.createTextField
   borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDER
   value:Ti.App.Properties.getString('channelName');
 
-
+win1.add(logoView)
 win1.add(setButton)
 win1.add(nameField)
 win1.add(channelField)
