@@ -3,6 +3,8 @@ Ti.App.channelName = Ti.App.Properties.getString('userName');
 
 Titanium.UI.setBackgroundColor('#fff'); 
 
+
+
 tabGroup = Ti.UI.createTabGroup()
 win1 = Ti.UI.createWindow
   title: 'vibee'
@@ -20,15 +22,35 @@ setButton = Ti.UI.createButton
   height: 100
   width: 400
 setButton.addEventListener 'click',(e)->
-  dialog = Titanium.UI.createAlertDialog()
-  dialog.setTitle('alett test')
-  dialog.setMessage('message')
-  dialog.show()
   connectWindow = Ti.UI.createWindow
     title: 'Sleeping'
     url: 'connect.js'
+  Ti.App.userName = nameField.value
+  Ti.App.channelName = channelField.value
   tab1.open(connectWindow)
 
-win1.add(setButton)
+#setup imput
+NAME_TOP = 200 
+CHANNEL_TOP = 300 
+WIDTH = 400 
 
+nameField = Ti.UI.createTextField
+  top:NAME_TOP
+  width:WIDTH
+  height:100
+  hintText:'なまえ'
+  borderStyle:Titanium.UI.INPUT_BORDERSTYLE_BEZEL
+
+
+channelField = Ti.UI.createTextField
+  top:CHANNEL_TOP
+  width:WIDTH
+  height:100
+  hintText:'あいことば'
+  borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDER
+
+
+win1.add(setButton)
+win1.add(nameField)
+win1.add(channelField)
 tabGroup.open()

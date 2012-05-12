@@ -5,11 +5,10 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.049805 seconds on emulator to get ready
+[DEBUG] waited 0.045313 seconds on emulator to get ready
 [DEBUG] net.hakamastyle.app.vibee installed? False
 [INFO] Copying project resources..
 [TRACE] COPYING MODIFIED FILE: /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/app.js => /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/app.js
-[TRACE] COPYING MODIFIED FILE: /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/connect.js => /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/connect.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] found special platform files dir = /Users/kyoro/dev/Titanium Studio Workspace/vibee/platform/android
@@ -90,6 +89,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.055128 seconds on emulator to get ready
+[DEBUG] waited 0.053069 seconds on emulator to get ready
 [INFO] Installing application on emulator
 [INFO] Application installed. Launch from drawer on Home Screen
