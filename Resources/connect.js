@@ -6,7 +6,7 @@ win = Titanium.UI.createWindow({
 });
 
 textarea = Titanium.UI.createTextArea({
-  value: userName
+  value: Ti.App.userName
 });
 
 win.add(textarea);

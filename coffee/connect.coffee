@@ -4,7 +4,7 @@ win = Titanium.UI.createWindow
   backgroundColor: '#fff'
 
 textarea = Titanium.UI.createTextArea
-  value:userName
+  value:Ti.App.userName
 win.add textarea
 win.open()
 
