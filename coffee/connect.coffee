@@ -23,6 +23,16 @@ readCallback = (e) ->
     length:e.bytesProcessed
 
   textarea.value = e.bytesProcessed + "> " + str + "\n" + textarea.value
+ 
+  #----
+  str.replace("\n","")
+  commands = str.split(" ")
+  if commands.length > 4 && commands[0] == 'VIBEE' && commands[1] == Ti.App.channelName
+    if commands[3] == "VIBRATE"
+      signs = commands[4].split("|")
+      signs.unshift(0)
+      Ti.Media.vibrate(signs)
+  
   Ti.Stream.read socket,readBuffer,readCallback
 
 socket = Ti.Network.Socket.createTCP
@@ -33,7 +43,7 @@ socket = Ti.Network.Socket.createTCP
     textarea.value += ">> Connected to host" + socket.host + "\n"
 
     data = Ti.createBuffer
-      value:"GET /index.html HTTP/1.1\r\nHost:example.com\r\n\r\n"
+      value:"VIBEE demo kyoro VIBRATE 1000|100|1000|100"
     
     bytesWritten = socket.write data
 

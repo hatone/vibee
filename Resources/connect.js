@@ -21,7 +21,7 @@ readBuffer = Titanium.createBuffer({
 });
 
 readCallback = function(e) {
-  var str;
+  var commands, signs, str;
   if (e.bytesProcessed === -1) {
     textarea.value += ">>Recieved socket closed \n";
     socket.close();
@@ -32,6 +32,15 @@ readCallback = function(e) {
     length: e.bytesProcessed
   });
   textarea.value = e.bytesProcessed + "> " + str + "\n" + textarea.value;
+  str.replace("\n", "");
+  commands = str.split(" ");
+  if (commands.length > 4 && commands[0] === 'VIBEE' && commands[1] === Ti.App.channelName) {
+    if (commands[3] === "VIBRATE") {
+      signs = commands[4].split("|");
+      signs.unshift(0);
+      Ti.Media.vibrate(signs);
+    }
+  }
   return Ti.Stream.read(socket, readBuffer, readCallback);
 };
 
@@ -43,7 +52,7 @@ socket = Ti.Network.Socket.createTCP({
     Ti.Stream.read(socket, readBuffer, readCallback);
     textarea.value += ">> Connected to host" + socket.host + "\n";
     data = Ti.createBuffer({
-      value: "GET /index.html HTTP/1.1\r\nHost:example.com\r\n\r\n"
+      value: "VIBEE demo kyoro VIBRATE 1000|100|1000|100"
     });
     return bytesWritten = socket.write(data);
   },
