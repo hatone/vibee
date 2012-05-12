@@ -49,13 +49,12 @@ socket = Ti.Network.Socket.createTCP({
   host: 'echo.picora.us',
   port: 3535,
   connected: function(e) {
-    var bytesWritten, data;
+    var data;
     Ti.Stream.read(socket, readBuffer, readCallback);
     textarea.value += ">> Connected to host" + socket.host + "\n";
-    data = Ti.createBuffer({
-      value: "VIBEE demo kyoro VIBRATE 1000|100|1000|100"
+    return data = Ti.createBuffer({
+      value: "VIBEE " + Ti.App.channelName + " " + Ti.App.userName + " VIBRATE 1000|100|1000|100"
     });
-    return bytesWritten = socket.write(data);
   },
   closed: function(e) {
     return textarea.value += ">> Socket closed";
@@ -63,3 +62,10 @@ socket = Ti.Network.Socket.createTCP({
 });
 
 socket.connect();
+
+Ti.Gesture.addEventListener("shake", function(e) {
+  var data;
+  return data = Ti.createBuffer({
+    value: "VIBEE " + Ti.App.channelName + " " + Ti.App.userName + " VIBRATE 100|10|100|10|100|10|100|10"
+  });
+});

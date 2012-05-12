@@ -1,9 +1,5 @@
 var CHANNEL_TOP, NAME_TOP, WIDTH, channelField, nameField, setButton, tab1, tabGroup, win1;
 
-Ti.App.userName = 'demo-user';
-
-Ti.App.channelName = 'demo';
-
 Titanium.UI.setBackgroundColor('#fff');
 
 tabGroup = Ti.UI.createTabGroup();
@@ -35,6 +31,8 @@ setButton.addEventListener('click', function(e) {
   });
   Ti.App.userName = nameField.value;
   Ti.App.channelName = channelField.value;
+  Ti.App.Properties.setString('userName', nameField.value);
+  Ti.App.Properties.setString('channelName', channelField.value);
   return tab1.open(connectWindow);
 });
 
@@ -49,7 +47,8 @@ nameField = Ti.UI.createTextField({
   width: WIDTH,
   height: 100,
   hintText: 'なまえ',
-  borderStyle: Titanium.UI.INPUT_BORDERSTYLE_BEZEL
+  borderStyle: Titanium.UI.INPUT_BORDERSTYLE_BEZEL,
+  value: Ti.App.Properties.getString('userName')
 });
 
 channelField = Ti.UI.createTextField({
@@ -57,7 +56,8 @@ channelField = Ti.UI.createTextField({
   width: WIDTH,
   height: 100,
   hintText: 'あいことば',
-  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDER
+  borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDER,
+  value: Ti.App.Properties.getString('channelName')
 });
 
 win1.add(setButton);
