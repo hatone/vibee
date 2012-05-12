@@ -25,6 +25,9 @@ setButton.addEventListener 'click',(e)->
   connectWindow = Ti.UI.createWindow
     title: 'Sleeping'
     url: 'connect.js'
+  connectWindow.orientationModes =[
+    Titanium.UI.PORTRAIT
+  ]
   Ti.App.userName = nameField.value
   Ti.App.channelName = channelField.value
   Ti.App.Properties.setString('userName', nameField.value);
