@@ -9,7 +9,7 @@ playSound = (num)->
 
 win = Titanium.UI.createWindow
   title:'connect window'
-  backgroundColor: '#fff'
+  backgroundColor: '#ECEAE4'
 socket
 readBuffer = Titanium.createBuffer
   length:1024

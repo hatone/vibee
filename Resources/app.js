@@ -1,12 +1,12 @@
 var CHANNEL_TOP, NAME_TOP, WIDTH, channelField, logoView, nameField, s, setButton, tab1, tabGroup, win1;
 
-Titanium.UI.setBackgroundColor('#fff');
+Titanium.UI.setBackgroundColor('#ECEAE4');
 
 tabGroup = Ti.UI.createTabGroup();
 
 win1 = Ti.UI.createWindow({
   title: 'vibee',
-  backgroundColor: '#fff'
+  backgroundColor: '#ECEAE4'
 });
 
 win1.orientationModes = [Titanium.UI.PORTRAIT];
@@ -42,8 +42,10 @@ setButton.addEventListener('click', function(e) {
 });
 
 logoView = Ti.UI.createImageView({
-  image: "images/logotest.png",
-  top: 10
+  image: "images/logo.png",
+  top: 30,
+  height: 150,
+  width: 450
 });
 
 s = Ti.Media.createSound({
