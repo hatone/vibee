@@ -1,4 +1,4 @@
-var CHANNEL_TOP, NAME_TOP, WIDTH, channelField, nameField, setButton, tab1, tabGroup, win1;
+var CHANNEL_TOP, NAME_TOP, WIDTH, channelField, logoView, nameField, setButton, tab1, tabGroup, win1;
 
 Titanium.UI.setBackgroundColor('#fff');
 
@@ -38,6 +38,11 @@ setButton.addEventListener('click', function(e) {
   }
 });
 
+logoView = Ti.UI.createImageView({
+  image: "../vibee/Resources/android/logotest.png",
+  top: 10
+});
+
 NAME_TOP = 200;
 
 CHANNEL_TOP = 300;
@@ -61,6 +66,8 @@ channelField = Ti.UI.createTextField({
   borderStyle: Ti.UI.INPUT_BORDERSTYLE_ROUNDER,
   value: Ti.App.Properties.getString('channelName')
 });
+
+win1.add(logoView);
 
 win1.add(setButton);
 

@@ -1,30 +1,45 @@
 Logfile initialized
-[INFO] logfile = /Users/kyoro/dev/Titanium Studio Workspace/vibee/build.log
-[DEBUG] /Users/kyoro/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/builder.py install vibee /Library/android-sdk-macosx /Users/kyoro/dev/Titanium Studio Workspace/vibee net.hakamastyle.app.vibee 1
-[INFO] Titanium SDK version: 1.8.0.1 (12/22/11 13:09 fbdc96f)
+[INFO] logfile = /Users/hatone/Documents/Titanium Studio Workspace/vibee/build.log
+[DEBUG] /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/builder.py install vibee /Developer/android-sdk-macosx /Users/hatone/Documents/Titanium Studio Workspace/vibee net.hakamastyle.app.vibee 4
+[INFO] Titanium SDK version: 1.7.5 (11/02/11 17:00 ab20af7)
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
+<<<<<<< HEAD
+[DEBUG] waited 0.013114 seconds on emulator to get ready
+[DEBUG] net.hakamastyle.app.vibee installed? False
+[INFO] Copying project resources..
+[TRACE] COPYING MODIFIED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/app.js => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/app.js
+=======
 [DEBUG] waited 0.063332 seconds on emulator to get ready
 [DEBUG] net.hakamastyle.app.vibee installed? False
 [INFO] Copying project resources..
 [TRACE] COPYING MODIFIED FILE: /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/connect.js => /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/connect.js
+>>>>>>> 8cbd15ac634b5bf09701cc48955b2548ee886333
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
-[DEBUG] found special platform files dir = /Users/kyoro/dev/Titanium Studio Workspace/vibee/platform/android
+[DEBUG] found special platform files dir = /Users/hatone/Documents/Titanium Studio Workspace/vibee/platform/android
 [INFO] Copying platform-specific files ...
-[DEBUG] copying app icon: /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/appicon.png
+[DEBUG] copying app icon: /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/appicon.png
 [DEBUG] generating theme.xml
+<<<<<<< HEAD
+[DEBUG] found splash screen at /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/default.png
+=======
 [DEBUG] found splash screen at /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/default.png
+>>>>>>> 8cbd15ac634b5bf09701cc48955b2548ee886333
 [TRACE] Writing out AndroidManifest.xml
-[DEBUG] adding /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/R.java to javac build list
-[DEBUG] adding /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeActivity.java to javac build list
-[DEBUG] adding /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeAppInfo.java to javac build list
-[DEBUG] adding /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeApplication.java to javac build list
-[DEBUG] Building Java Sources: "/Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/R.java" "/Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeActivity.java" "/Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeAppInfo.java" "/Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeApplication.java"
+[DEBUG] adding /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/R.java to javac build list
+[DEBUG] adding /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeActivity.java to javac build list
+[DEBUG] adding /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeAppInfo.java to javac build list
+[DEBUG] adding /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeApplication.java to javac build list
+[DEBUG] Building Java Sources: "/Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/R.java" "/Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeActivity.java" "/Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeAppInfo.java" "/Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/VibeeApplication.java"
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
+<<<<<<< HEAD
+[DEBUG] creating unsigned apk: /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/app-unsigned.apk
+=======
 [DEBUG] creating unsigned apk: /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/bin/app-unsigned.apk
+>>>>>>> 8cbd15ac634b5bf09701cc48955b2548ee886333
 [DEBUG] from resource zip => assets/Resources/sounds/0.mp3
 [DEBUG] from resource zip => assets/Resources/sounds/1.mp3
 [DEBUG] from resource zip => assets/Resources/sounds/2.mp3
@@ -40,14 +55,40 @@ Logfile initialized
 [DEBUG] from resource zip => assets/Resources/connect.js
 [DEBUG] from resource zip => assets/Resources/default.png
 [DEBUG] from resource zip => assets/Resources/hoge.js
-[DEBUG] from resource zip => assets/app.json
-[DEBUG] from resource zip => assets/index.json
+[DEBUG] from resource zip => assets/Resources/logotest.png
 [DEBUG] from resource zip => assets/tiapp.xml
 [DEBUG] from resource zip => res/drawable/appicon.png
 [DEBUG] from resource zip => res/drawable/background.png
 [DEBUG] from resource zip => res/layout/titanium_tabgroup.xml
 [DEBUG] from resource zip => AndroidManifest.xml
 [DEBUG] from resource zip => resources.arsc
+<<<<<<< HEAD
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/smalljs.jar => org/mozilla/javascript/resources/Messages.properties
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/smalljs.jar => org/mozilla/javascript/resources/Messages_fr.properties
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/apache/mime4j-NOTICE.txt
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR /Users/hatone/Library/Application Support/Titanium/mobilesdk/osx/1.7.5/android/titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.014815 seconds on emulator to get ready
+=======
 [DEBUG] from JAR /Users/kyoro/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
 [DEBUG] from JAR /Users/kyoro/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
 [DEBUG] from JAR /Users/kyoro/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
@@ -68,5 +109,6 @@ Logfile initialized
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
 [DEBUG] waited 0.062842 seconds on emulator to get ready
+>>>>>>> 8cbd15ac634b5bf09701cc48955b2548ee886333
 [INFO] Installing application on emulator
 [INFO] Application installed. Launch from drawer on Home Screen
