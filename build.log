@@ -92,3 +92,5 @@ Logfile initialized
 [DEBUG] waited 0.053069 seconds on emulator to get ready
 [INFO] Installing application on emulator
 [INFO] Application installed. Launch from drawer on Home Screen
+[DEBUG] signal caught: 15
+[DEBUG] calling emulator kill on 35922
