@@ -1,8 +1,8 @@
-var channelName, setButton, tab1, tabGroup, userName, win1;
+var setButton, tab1, tabGroup, win1;
 
-userName = 'demo-user';
+Ti.App.userName = 'demo-user';
 
-channelName = 'demo';
+Ti.App.channelName = 'demo';
 
 Titanium.UI.setBackgroundColor('#fff');
 

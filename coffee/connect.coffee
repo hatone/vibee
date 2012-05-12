@@ -1,9 +1,10 @@
-Titanium.UI.setBackgroundColor '#000'
 
 win = Titanium.UI.createWindow
-  title:'win1'
+  title:'connect window'
+  backgroundColor: '#fff'
+
 textarea = Titanium.UI.createTextArea
-  value:''
+  value:userName
 win.add textarea
 win.open()
 
