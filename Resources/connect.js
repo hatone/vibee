@@ -1,62 +1,21 @@
-var readBuffer, readCallback, socket, tap1, tap2, tap3, win;
+var i, playSound, readBuffer, readCallback, sendSound, socket, sound, tap0, tap1, tap2, tap3, tap4, tap5, tap6, tap7, tap8, win, _i;
+
+sound = [];
+
+for (i = _i = 0; _i < 9; i = ++_i) {
+  sound.push(Ti.Media.createSound({
+    url: 'sounds/' + i + '.mp3'
+  }));
+}
+
+playSound = function(num) {
+  return sound[num].play();
+};
 
 win = Titanium.UI.createWindow({
   title: 'connect window',
   backgroundColor: '#fff'
 });
-
-tap1 = Ti.UI.createImageView({
-  top: '0%',
-  left: '0%',
-  width: '33%',
-  height: '33%'
-});
-
-tap1.addEventListener('click', function(e) {
-  var dialog;
-  dialog = Titanium.UI.createAlertDialog();
-  dialog.setTitle('Tap1');
-  dialog.setMessage('Tap1');
-  return dialog.show();
-});
-
-win.add(tap1);
-
-tap2 = Ti.UI.createImageView({
-  top: '0%',
-  left: '33%',
-  width: '33%',
-  height: '33%'
-});
-
-tap2.addEventListener('click', function(e) {
-  var dialog;
-  dialog = Titanium.UI.createAlertDialog();
-  dialog.setTitle('Tap2');
-  dialog.setMessage('Tap2');
-  return dialog.show();
-});
-
-win.add(tap2);
-
-tap3 = Ti.UI.createImageView({
-  top: '0%',
-  left: '66%',
-  width: '33%',
-  height: '33%'
-});
-
-tap3.addEventListener('click', function(e) {
-  var dialog;
-  dialog = Titanium.UI.createAlertDialog();
-  dialog.setTitle('Tap3');
-  dialog.setMessage('Tap3');
-  return dialog.show();
-});
-
-win.add(tap3);
-
-win.open();
 
 socket;
 
@@ -78,10 +37,13 @@ readCallback = function(e) {
   str.replace("\n", "");
   commands = str.split(" ");
   if (commands.length > 4 && commands[0] === 'VIBEE' && commands[1] === Ti.App.channelName) {
+    Ti.UI.currentWindow.title = commands[2];
     if (commands[3] === "VIBRATE") {
       signs = commands[4].split("|");
       signs.unshift(0);
       Ti.Media.vibrate(signs);
+    } else {
+      playSound(commands[4]);
     }
   }
   return Ti.Stream.read(socket, readBuffer, readCallback);
@@ -109,3 +71,130 @@ Ti.Gesture.addEventListener("shake", function(e) {
   });
   return bytesWritten = socket.write(data);
 });
+
+sendSound = function(num) {
+  var bytesWritten, data;
+  data = Ti.createBuffer({
+    value: "VIBEE " + Ti.App.channelName + " " + Ti.App.userName + " SOUND " + num + " P"
+  });
+  return bytesWritten = socket.write(data);
+};
+
+tap0 = Ti.UI.createImageView({
+  top: '0%',
+  left: '0%',
+  width: '33%',
+  height: '33%'
+});
+
+tap0.addEventListener('click', function(e) {
+  return sendSound(0);
+});
+
+win.add(tap0);
+
+tap1 = Ti.UI.createImageView({
+  top: '0%',
+  left: '33%',
+  width: '33%',
+  height: '33%'
+});
+
+tap1.addEventListener('click', function(e) {
+  return sendSound(1);
+});
+
+win.add(tap1);
+
+tap2 = Ti.UI.createImageView({
+  top: '0%',
+  left: '66%',
+  width: '33%',
+  height: '33%'
+});
+
+tap2.addEventListener('click', function(e) {
+  return sendSound(2);
+});
+
+win.add(tap2);
+
+tap3 = Ti.UI.createImageView({
+  top: '33%',
+  left: '0%',
+  width: '33%',
+  height: '33%'
+});
+
+tap3.addEventListener('click', function(e) {
+  return sendSound(3);
+});
+
+win.add(tap3);
+
+tap4 = Ti.UI.createImageView({
+  top: '33%',
+  left: '33%',
+  width: '33%',
+  height: '33%'
+});
+
+tap4.addEventListener('click', function(e) {
+  return sendSound(4);
+});
+
+win.add(tap4);
+
+tap5 = Ti.UI.createImageView({
+  top: '33%',
+  left: '66%',
+  width: '33%',
+  height: '33%'
+});
+
+tap5.addEventListener('click', function(e) {
+  return sendSound(5);
+});
+
+win.add(tap5);
+
+tap6 = Ti.UI.createImageView({
+  top: '66%',
+  left: '0%',
+  width: '33%',
+  height: '33%'
+});
+
+tap6.addEventListener('click', function(e) {
+  return sendSound(6);
+});
+
+win.add(tap6);
+
+tap7 = Ti.UI.createImageView({
+  top: '66%',
+  left: '33%',
+  width: '33%',
+  height: '33%'
+});
+
+tap7.addEventListener('click', function(e) {
+  return sendSound(7);
+});
+
+win.add(tap7);
+
+tap8 = Ti.UI.createImageView({
+  top: '66%',
+  left: '66%',
+  width: '33%',
+  height: '33%'
+});
+
+tap8.addEventListener('click', function(e) {
+  return sendSound(8);
+});
+
+win.add(tap8);
+
+win.open();
