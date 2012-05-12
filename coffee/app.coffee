@@ -1,5 +1,6 @@
-Ti.App.userName = 'demo-user'
-Ti.App.channelName = 'demo'
+Ti.App.userName = Ti.App.Properties.getString('userName');
+Ti.App.channelName = Ti.App.Properties.getString('userName');
+
 Titanium.UI.setBackgroundColor('#fff'); 
 
 tabGroup = Ti.UI.createTabGroup()
