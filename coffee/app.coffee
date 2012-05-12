@@ -1,8 +1,4 @@
-Ti.App.userName = 'demo-user'
-Ti.App.channelName = 'demo'
 Titanium.UI.setBackgroundColor('#fff'); 
-
-
 
 tabGroup = Ti.UI.createTabGroup()
 win1 = Ti.UI.createWindow
@@ -21,15 +17,13 @@ setButton = Ti.UI.createButton
   height: 100
   width: 400
 setButton.addEventListener 'click',(e)->
-  dialog = Titanium.UI.createAlertDialog()
-  dialog.setTitle('alett test')
-  dialog.setMessage(nameField.value+""+ channelField.value)
-  dialog.show()
   connectWindow = Ti.UI.createWindow
     title: 'Sleeping'
     url: 'connect.js'
-  connectWindow.name = nameField.value
-  connectWindow.channel = channelField.value
+  Ti.App.userName = nameField.value
+  Ti.App.channelName = channelField.value
+  Ti.App.Properties.setString('userName', nameField.value);
+  Ti.App.Properties.setString('channelName', channelField.value);
   tab1.open(connectWindow)
 
 #setup imput
@@ -43,7 +37,7 @@ nameField = Ti.UI.createTextField
   height:100
   hintText:'なまえ'
   borderStyle:Titanium.UI.INPUT_BORDERSTYLE_BEZEL
-
+  value:Ti.App.Properties.getString('userName');
 
 channelField = Ti.UI.createTextField
   top:CHANNEL_TOP
@@ -51,6 +45,7 @@ channelField = Ti.UI.createTextField
   height:100
   hintText:'あいことば'
   borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDER
+  value:Ti.App.Properties.getString('channelName');
 
 
 win1.add(setButton)
