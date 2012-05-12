@@ -44,11 +44,19 @@ socket = Ti.Network.Socket.createTCP
     textarea.value += ">> Connected to host" + socket.host + "\n"
 
     data = Ti.createBuffer
-      value:"VIBEE demo kyoro VIBRATE 1000|100|1000|100"
+      value:"VIBEE " + Ti.App.channelName + " " + Ti.App.userName + " VIBRATE 1000|100|1000|100"
     
-    bytesWritten = socket.write data
+    #bytesWritten = socket.write data
 
   closed: (e) ->
     textarea.value += ">> Socket closed"
 
 socket.connect()
+
+Ti.Gesture.addEventListener "shake", (e) ->
+  #textarea.value = parseInt(e.timestamp - (new Date)) + "\n" + textarea.value 
+  data = Ti.createBuffer
+    value:"VIBEE " + Ti.App.channelName + " " + Ti.App.userName + " VIBRATE 100|10|100|10|100|10|100|10"
+    
+  bytesWritten = socket.write data
+ 

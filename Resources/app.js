@@ -33,7 +33,9 @@ setButton.addEventListener('click', function(e) {
   Ti.App.channelName = channelField.value;
   Ti.App.Properties.setString('userName', nameField.value);
   Ti.App.Properties.setString('channelName', channelField.value);
-  return tab1.open(connectWindow);
+  if (nameField.value) {
+    return tab1.open(connectWindow);
+  }
 });
 
 logoView = Ti.UI.createImageView({

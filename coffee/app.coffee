@@ -24,7 +24,8 @@ setButton.addEventListener 'click',(e)->
   Ti.App.channelName = channelField.value
   Ti.App.Properties.setString('userName', nameField.value);
   Ti.App.Properties.setString('channelName', channelField.value);
-  tab1.open(connectWindow)
+  if nameField.value
+    tab1.open(connectWindow)
 
 #image
 logoView = Ti.UI.createImageView
