@@ -1,9 +1,60 @@
-var readBuffer, readCallback, socket, win;
+var readBuffer, readCallback, socket, tap1, tap2, tap3, win;
 
 win = Titanium.UI.createWindow({
   title: 'connect window',
   backgroundColor: '#fff'
 });
+
+tap1 = Ti.UI.createImageView({
+  top: '0%',
+  left: '0%',
+  width: '33%',
+  height: '33%'
+});
+
+tap1.addEventListener('click', function(e) {
+  var dialog;
+  dialog = Titanium.UI.createAlertDialog();
+  dialog.setTitle('Tap1');
+  dialog.setMessage('Tap1');
+  return dialog.show();
+});
+
+win.add(tap1);
+
+tap2 = Ti.UI.createImageView({
+  top: '0%',
+  left: '33%',
+  width: '33%',
+  height: '33%'
+});
+
+tap2.addEventListener('click', function(e) {
+  var dialog;
+  dialog = Titanium.UI.createAlertDialog();
+  dialog.setTitle('Tap2');
+  dialog.setMessage('Tap2');
+  return dialog.show();
+});
+
+win.add(tap2);
+
+tap3 = Ti.UI.createImageView({
+  top: '0%',
+  left: '66%',
+  width: '33%',
+  height: '33%'
+});
+
+tap3.addEventListener('click', function(e) {
+  var dialog;
+  dialog = Titanium.UI.createAlertDialog();
+  dialog.setTitle('Tap3');
+  dialog.setMessage('Tap3');
+  return dialog.show();
+});
+
+win.add(tap3);
 
 win.open();
 

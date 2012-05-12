@@ -29,7 +29,7 @@ setButton.addEventListener 'click',(e)->
 
 #image
 logoView = Ti.UI.createImageView
-  image:"../vibee/Resources/android/logotest.png"
+  image:"images/logotest.png"
   top:10
 
 #setup imput

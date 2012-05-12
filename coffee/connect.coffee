@@ -3,9 +3,49 @@ win = Titanium.UI.createWindow
   title:'connect window'
   backgroundColor: '#fff'
 
-textarea = Titanium.UI.createTextArea
-  value:Ti.App.userName
-win.add textarea
+#textarea = Titanium.UI.createTextArea
+#  value:Ti.App.userName
+#win.add textarea
+
+#tap1
+tap1 = Ti.UI.createImageView
+  top:'0%'
+  left:'0%'
+  width:'33%'
+  height:'33%'
+tap1.addEventListener 'click', (e)->
+  dialog = Titanium.UI.createAlertDialog()
+  dialog.setTitle('Tap1')
+  dialog.setMessage('Tap1')
+  dialog.show()
+win.add(tap1)
+#tap2
+tap2 = Ti.UI.createImageView
+  top:'0%'
+  left:'33%'
+  width:'33%'
+  height:'33%'
+tap2.addEventListener 'click', (e)->
+  dialog = Titanium.UI.createAlertDialog()
+  dialog.setTitle('Tap2')
+  dialog.setMessage('Tap2');
+  dialog.show();
+win.add(tap2)
+
+#tap3
+tap3 = Ti.UI.createImageView
+  top:'0%'
+  left:'66%'
+  width:'33%'
+  height:'33%'
+tap3.addEventListener 'click', (e)->
+  dialog = Titanium.UI.createAlertDialog();
+  dialog.setTitle('Tap3');
+  dialog.setMessage('Tap3'); 
+  dialog.show();
+win.add(tap3)
+
+
 win.open()
 
 socket
@@ -14,7 +54,7 @@ readBuffer = Titanium.createBuffer
 
 readCallback = (e) ->
   if e.bytesProcessed == -1
-    textarea.value += ">>Recieved socket closed \n"
+#    textarea.value += ">>Recieved socket closed \n"
     socket.close()
     return
 
@@ -22,8 +62,8 @@ readCallback = (e) ->
     source:readBuffer
     length:e.bytesProcessed
 
-  textarea.value = e.bytesProcessed + "> " + str + "\n" + textarea.value
-  textarea.value = Ti.App.channelName + "-cname\n" + textarea.value
+#  textarea.value = e.bytesProcessed + "> " + str + "\n" + textarea.value
+#  textarea.value = Ti.App.channelName + "-cname\n" + textarea.value
  
   #----
   str.replace("\n","")
@@ -41,7 +81,7 @@ socket = Ti.Network.Socket.createTCP
   port:3535
   connected: (e) ->
     Ti.Stream.read socket,readBuffer,readCallback
-    textarea.value += ">> Connected to host" + socket.host + "\n"
+#    textarea.value += ">> Connected to host" + socket.host + "\n"
 
     data = Ti.createBuffer
       value:"VIBEE " + Ti.App.channelName + " " + Ti.App.userName + " VIBRATE 1000|100|1000|100"
@@ -49,7 +89,7 @@ socket = Ti.Network.Socket.createTCP
     #bytesWritten = socket.write data
 
   closed: (e) ->
-    textarea.value += ">> Socket closed"
+#    textarea.value += ">> Socket closed"
 
 socket.connect()
 
