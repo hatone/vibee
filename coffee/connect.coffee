@@ -58,5 +58,5 @@ Ti.Gesture.addEventListener "shake", (e) ->
   data = Ti.createBuffer
     value:"VIBEE " + Ti.App.channelName + " " + Ti.App.userName + " VIBRATE 100|10|100|10|100|10|100|10"
     
-    #bytesWritten = socket.write data
+  bytesWritten = socket.write data
  

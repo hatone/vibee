@@ -5,36 +5,16 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.045313 seconds on emulator to get ready
+[DEBUG] waited 0.063332 seconds on emulator to get ready
 [DEBUG] net.hakamastyle.app.vibee installed? False
 [INFO] Copying project resources..
-[TRACE] COPYING MODIFIED FILE: /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/app.js => /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/app.js
+[TRACE] COPYING MODIFIED FILE: /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/connect.js => /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/connect.js
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] found special platform files dir = /Users/kyoro/dev/Titanium Studio Workspace/vibee/platform/android
 [INFO] Copying platform-specific files ...
 [DEBUG] copying app icon: /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/appicon.png
 [DEBUG] generating theme.xml
-[DEBUG] found drawable-long-land-hdpi splash screen at /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-long-land-hdpi/default.png
-[DEBUG] copying /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-long-land-hdpi/default.png splash screen to /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/res/drawable-long-land-hdpi/background.png
-[DEBUG] found drawable-long-land-ldpi splash screen at /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-long-land-ldpi/default.png
-[DEBUG] copying /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-long-land-ldpi/default.png splash screen to /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/res/drawable-long-land-ldpi/background.png
-[DEBUG] found drawable-long-port-hdpi splash screen at /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-long-port-hdpi/default.png
-[DEBUG] copying /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-long-port-hdpi/default.png splash screen to /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/res/drawable-long-port-hdpi/background.png
-[DEBUG] found drawable-long-port-ldpi splash screen at /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-long-port-ldpi/default.png
-[DEBUG] copying /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-long-port-ldpi/default.png splash screen to /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/res/drawable-long-port-ldpi/background.png
-[DEBUG] found drawable-notlong-land-hdpi splash screen at /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-notlong-land-hdpi/default.png
-[DEBUG] copying /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-notlong-land-hdpi/default.png splash screen to /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/res/drawable-notlong-land-hdpi/background.png
-[DEBUG] found drawable-notlong-land-ldpi splash screen at /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-notlong-land-ldpi/default.png
-[DEBUG] copying /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-notlong-land-ldpi/default.png splash screen to /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/res/drawable-notlong-land-ldpi/background.png
-[DEBUG] found drawable-notlong-land-mdpi splash screen at /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-notlong-land-mdpi/default.png
-[DEBUG] copying /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-notlong-land-mdpi/default.png splash screen to /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/res/drawable-notlong-land-mdpi/background.png
-[DEBUG] found drawable-notlong-port-hdpi splash screen at /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-notlong-port-hdpi/default.png
-[DEBUG] copying /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-notlong-port-hdpi/default.png splash screen to /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/res/drawable-notlong-port-hdpi/background.png
-[DEBUG] found drawable-notlong-port-ldpi splash screen at /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-notlong-port-ldpi/default.png
-[DEBUG] copying /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-notlong-port-ldpi/default.png splash screen to /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/res/drawable-notlong-port-ldpi/background.png
-[DEBUG] found drawable-notlong-port-mdpi splash screen at /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-notlong-port-mdpi/default.png
-[DEBUG] copying /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/android/images/res-notlong-port-mdpi/default.png splash screen to /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/res/drawable-notlong-port-mdpi/background.png
 [DEBUG] found splash screen at /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/default.png
 [TRACE] Writing out AndroidManifest.xml
 [DEBUG] adding /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/gen/net/hakamastyle/app/vibee/R.java to javac build list
@@ -45,6 +25,14 @@ Logfile initialized
 [INFO] Compiling Android Resources... This could take some time
 [DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/bin/app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/sounds/0.mp3
+[DEBUG] from resource zip => assets/Resources/sounds/1.mp3
+[DEBUG] from resource zip => assets/Resources/sounds/2.mp3
+[DEBUG] from resource zip => assets/Resources/sounds/3.mp3
+[DEBUG] from resource zip => assets/Resources/sounds/4.mp3
+[DEBUG] from resource zip => assets/Resources/sounds/5.mp3
+[DEBUG] from resource zip => assets/Resources/sounds/6.mp3
+[DEBUG] from resource zip => assets/Resources/sounds/7.mp3
 [DEBUG] from resource zip => assets/Resources/KS_nav_ui.png
 [DEBUG] from resource zip => assets/Resources/KS_nav_views.png
 [DEBUG] from resource zip => assets/Resources/app.js
@@ -60,16 +48,6 @@ Logfile initialized
 [DEBUG] from resource zip => res/layout/titanium_tabgroup.xml
 [DEBUG] from resource zip => AndroidManifest.xml
 [DEBUG] from resource zip => resources.arsc
-[DEBUG] from resource zip => res/drawable-long-land-hdpi/background.png
-[DEBUG] from resource zip => res/drawable-long-land-ldpi/background.png
-[DEBUG] from resource zip => res/drawable-long-port-hdpi/background.png
-[DEBUG] from resource zip => res/drawable-long-port-ldpi/background.png
-[DEBUG] from resource zip => res/drawable-notlong-land-hdpi/background.png
-[DEBUG] from resource zip => res/drawable-notlong-land-ldpi/background.png
-[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/background.png
-[DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
-[DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
-[DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
 [DEBUG] from JAR /Users/kyoro/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
 [DEBUG] from JAR /Users/kyoro/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
 [DEBUG] from JAR /Users/kyoro/Library/Application Support/Titanium/mobilesdk/osx/1.8.0.1/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
@@ -89,8 +67,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.053069 seconds on emulator to get ready
+[DEBUG] waited 0.062842 seconds on emulator to get ready
 [INFO] Installing application on emulator
 [INFO] Application installed. Launch from drawer on Home Screen
-[DEBUG] signal caught: 15
-[DEBUG] calling emulator kill on 35922

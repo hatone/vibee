@@ -64,8 +64,9 @@ socket = Ti.Network.Socket.createTCP({
 socket.connect();
 
 Ti.Gesture.addEventListener("shake", function(e) {
-  var data;
-  return data = Ti.createBuffer({
+  var bytesWritten, data;
+  data = Ti.createBuffer({
     value: "VIBEE " + Ti.App.channelName + " " + Ti.App.userName + " VIBRATE 100|10|100|10|100|10|100|10"
   });
+  return bytesWritten = socket.write(data);
 });
