@@ -28,17 +28,13 @@ setButton = Ti.UI.createButton({
 });
 
 setButton.addEventListener('click', function(e) {
-  var connectWindow, dialog;
-  dialog = Titanium.UI.createAlertDialog();
-  dialog.setTitle('alett test');
-  dialog.setMessage(nameField.value + "" + channelField.value);
-  dialog.show();
+  var connectWindow;
   connectWindow = Ti.UI.createWindow({
     title: 'Sleeping',
     url: 'connect.js'
   });
-  connectWindow.name = nameField.value;
-  connectWindow.channel = channelField.value;
+  Ti.App.userName = nameField.value;
+  Ti.App.channelName = channelField.value;
   return tab1.open(connectWindow);
 });
 

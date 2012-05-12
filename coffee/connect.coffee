@@ -23,6 +23,7 @@ readCallback = (e) ->
     length:e.bytesProcessed
 
   textarea.value = e.bytesProcessed + "> " + str + "\n" + textarea.value
+  textarea.value = Ti.App.channelName + "-cname\n" + textarea.value
  
   #----
   str.replace("\n","")

@@ -21,15 +21,11 @@ setButton = Ti.UI.createButton
   height: 100
   width: 400
 setButton.addEventListener 'click',(e)->
-  dialog = Titanium.UI.createAlertDialog()
-  dialog.setTitle('alett test')
-  dialog.setMessage(nameField.value+""+ channelField.value)
-  dialog.show()
   connectWindow = Ti.UI.createWindow
     title: 'Sleeping'
     url: 'connect.js'
-  connectWindow.name = nameField.value
-  connectWindow.channel = channelField.value
+  Ti.App.userName = nameField.value
+  Ti.App.channelName = channelField.value
   tab1.open(connectWindow)
 
 #setup imput

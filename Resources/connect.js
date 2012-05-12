@@ -32,6 +32,7 @@ readCallback = function(e) {
     length: e.bytesProcessed
   });
   textarea.value = e.bytesProcessed + "> " + str + "\n" + textarea.value;
+  textarea.value = Ti.App.channelName + "-cname\n" + textarea.value;
   str.replace("\n", "");
   commands = str.split(" ");
   if (commands.length > 4 && commands[0] === 'VIBEE' && commands[1] === Ti.App.channelName) {
