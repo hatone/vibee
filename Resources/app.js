@@ -9,6 +9,8 @@ win1 = Ti.UI.createWindow({
   backgroundColor: '#fff'
 });
 
+win1.orientationModes = [Titanium.UI.PORTRAIT];
+
 tab1 = Ti.UI.createTab({
   window: win1
 });

@@ -5,11 +5,17 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.012564 seconds on emulator to get ready
+[DEBUG] waited 0.012930 seconds on emulator to get ready
 [DEBUG] net.hakamastyle.app.vibee installed? False
 [INFO] Copying project resources..
 [TRACE] COPYING MODIFIED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/app.js => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/app.js
-[TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/sounds/0.wav => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/sounds/0.wav
+[TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/sounds/1.wav => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/sounds/1.wav
+[TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/sounds/2.wav => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/sounds/2.wav
+[TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/sounds/3.wav => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/sounds/3.wav
+[TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/sounds/4.wav => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/sounds/4.wav
+[TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/sounds/5.wav => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/sounds/5.wav
+[TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/sounds/6.wav => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/sounds/6.wav
+[TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/sounds/7.wav => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/sounds/7.wav
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] found special platform files dir = /Users/hatone/Documents/Titanium Studio Workspace/vibee/platform/android
@@ -27,15 +33,14 @@ Logfile initialized
 [DEBUG] Android classes.dex built
 [DEBUG] creating unsigned apk: /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/app-unsigned.apk
 [DEBUG] from resource zip => assets/Resources/images/logotest.png
-[DEBUG] from resource zip => assets/Resources/sounds/0.mp3
 [DEBUG] from resource zip => assets/Resources/sounds/0.wav
-[DEBUG] from resource zip => assets/Resources/sounds/1.mp3
-[DEBUG] from resource zip => assets/Resources/sounds/2.mp3
-[DEBUG] from resource zip => assets/Resources/sounds/3.mp3
-[DEBUG] from resource zip => assets/Resources/sounds/4.mp3
-[DEBUG] from resource zip => assets/Resources/sounds/5.mp3
-[DEBUG] from resource zip => assets/Resources/sounds/6.mp3
-[DEBUG] from resource zip => assets/Resources/sounds/7.mp3
+[DEBUG] from resource zip => assets/Resources/sounds/1.wav
+[DEBUG] from resource zip => assets/Resources/sounds/2.wav
+[DEBUG] from resource zip => assets/Resources/sounds/3.wav
+[DEBUG] from resource zip => assets/Resources/sounds/4.wav
+[DEBUG] from resource zip => assets/Resources/sounds/5.wav
+[DEBUG] from resource zip => assets/Resources/sounds/6.wav
+[DEBUG] from resource zip => assets/Resources/sounds/7.wav
 [DEBUG] from resource zip => assets/Resources/KS_nav_ui.png
 [DEBUG] from resource zip => assets/Resources/KS_nav_views.png
 [DEBUG] from resource zip => assets/Resources/app.js
@@ -74,6 +79,6 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
-[DEBUG] waited 0.012798 seconds on emulator to get ready
+[DEBUG] waited 0.019119 seconds on emulator to get ready
 [INFO] Installing application on emulator
 [INFO] Application installed. Launch from drawer on Home Screen
