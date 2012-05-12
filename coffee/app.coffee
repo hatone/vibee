@@ -18,6 +18,7 @@ win1.tabBarHidden = true
 #setup Window
 setButton = Ti.UI.createButton
   title: 'Start'
+  top:500
   height: 100
   width: 400
 setButton.addEventListener 'click',(e)->

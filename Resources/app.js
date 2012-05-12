@@ -21,6 +21,7 @@ win1.tabBarHidden = true;
 
 setButton = Ti.UI.createButton({
   title: 'Start',
+  top: 500,
   height: 100,
   width: 400
 });
