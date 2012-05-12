@@ -4,3 +4,4 @@ tmp
 build
 *.js
 *.log
+build.log
