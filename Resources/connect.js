@@ -1,4 +1,4 @@
-var i, playSound, readBuffer, readCallback, sendSound, socket, sound, tap0, tap1, tap2, tap3, tap4, tap5, tap6, tap7, tap8, win, _i;
+var arriveScreen, bcolor, gcolor, i, playSound, rcolor, readBuffer, readCallback, sendSound, socket, sound, tap0, tap1, tap2, tap3, tap4, tap5, tap6, tap7, tap8, timer, win, _i;
 
 sound = [];
 
@@ -9,13 +9,41 @@ for (i = _i = 0; _i < 9; i = ++_i) {
 }
 
 playSound = function(num) {
+  arriveScreen();
   return sound[num].play();
+};
+
+rcolor = 255;
+
+gcolor = 255;
+
+bcolor = 255;
+
+timer = 0;
+
+arriveScreen = function() {
+  rcolor = 64;
+  gcolor = 64;
+  bcolor = 64;
+  return timer = setInterval(function(e) {
+    if (rcolor > 16 || gcolor > 16 || bcolor > 16) {
+      win.backgroundColor = '#' + rcolor.toString(16) + gcolor.toString(16) + bcolor.toString(16);
+      rcolor -= 2;
+      gcolor -= 2;
+      return bcolor -= 2;
+    } else {
+      win.backgroundColor = "#000";
+      return clearInterval(timer);
+    }
+  }, 25);
 };
 
 win = Titanium.UI.createWindow({
   title: 'connect window',
-  backgroundColor: '#fff'
+  backgroundColor: '#000'
 });
+
+win.orientationModes = [Titanium.UI.PORTRAIT];
 
 socket;
 
