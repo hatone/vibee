@@ -4,12 +4,33 @@ for i in [0...9]
     url: 'sounds/' + i + '.mp3'
  
 playSound = (num)->
+  arriveScreen()
   sound[num].play()
 
+rcolor = 255
+gcolor = 255
+bcolor = 255
+timer = 0
+arriveScreen = ()->
+  rcolor = 64
+  gcolor = 64
+  bcolor = 64
+  timer =  setInterval((e)->
+    if rcolor > 16 || gcolor > 16 || bcolor > 16
+      win.backgroundColor =  '#' + rcolor.toString(16) + gcolor.toString(16) + bcolor.toString(16)
+      rcolor -= 2
+      gcolor -= 2
+      bcolor -= 2
+    else
+      win.backgroundColor = "#000"
+      clearInterval(timer)
+   25)
 
 win = Titanium.UI.createWindow
   title:'connect window'
-  backgroundColor: '#fff'
+  backgroundColor: '#000'
+
+win.orientationModes = [Titanium.UI.PORTRAIT]
 socket
 readBuffer = Titanium.createBuffer
   length:1024
