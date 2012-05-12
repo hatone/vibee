@@ -1,5 +1,5 @@
-userName = 'demo-user'
-channelName = 'demo'
+Ti.App.userName = 'demo-user'
+Ti.App.channelName = 'demo'
 Titanium.UI.setBackgroundColor('#fff'); 
 
 

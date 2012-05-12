@@ -5,6 +5,7 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
+<<<<<<< HEAD
 [DEBUG] waited 0.012702 seconds on emulator to get ready
 [DEBUG] net.hakamastyle.app.vibee installed? False
 [INFO] Copying project resources..
@@ -16,6 +17,13 @@ Logfile initialized
 [TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/hoge.js => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/hoge.js
 [TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/KS_nav_ui.png => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/KS_nav_ui.png
 [TRACE] COPYING CREATED FILE: /Users/hatone/Documents/Titanium Studio Workspace/vibee/Resources/KS_nav_views.png => /Users/hatone/Documents/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/KS_nav_views.png
+=======
+[DEBUG] waited 0.049805 seconds on emulator to get ready
+[DEBUG] net.hakamastyle.app.vibee installed? False
+[INFO] Copying project resources..
+[TRACE] COPYING MODIFIED FILE: /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/app.js => /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/app.js
+[TRACE] COPYING MODIFIED FILE: /Users/kyoro/dev/Titanium Studio Workspace/vibee/Resources/connect.js => /Users/kyoro/dev/Titanium Studio Workspace/vibee/build/android/bin/assets/Resources/connect.js
+>>>>>>> 789c8fa8c7824b8675338e0f708918b5d88d8101
 [TRACE] Generating Java Classes
 [DEBUG] Processing Android resource drawables
 [DEBUG] found special platform files dir = /Users/hatone/Documents/Titanium Studio Workspace/vibee/platform/android
@@ -101,6 +109,10 @@ Logfile initialized
 [DEBUG] Waiting for device to be ready ...
 [TRACE] adb devices returned 1 devices/emulators
 [DEBUG] Device connected... (waited 0 seconds)
+<<<<<<< HEAD
 [DEBUG] waited 0.013142 seconds on emulator to get ready
+=======
+[DEBUG] waited 0.055128 seconds on emulator to get ready
+>>>>>>> 789c8fa8c7824b8675338e0f708918b5d88d8101
 [INFO] Installing application on emulator
 [INFO] Application installed. Launch from drawer on Home Screen

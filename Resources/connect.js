@@ -1,13 +1,12 @@
 var readBuffer, readCallback, socket, textarea, win;
 
-Titanium.UI.setBackgroundColor('#000');
-
 win = Titanium.UI.createWindow({
-  title: 'win1'
+  title: 'connect window',
+  backgroundColor: '#fff'
 });
 
 textarea = Titanium.UI.createTextArea({
-  value: ''
+  value: Ti.App.userName
 });
 
 win.add(textarea);

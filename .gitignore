@@ -1,3 +1,5 @@
 tmp
 *.swp
 *.swo
+build
+*.js
