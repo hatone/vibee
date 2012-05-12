@@ -1,9 +1,4 @@
-Ti.App.userName = Ti.App.Properties.getString('userName');
-Ti.App.channelName = Ti.App.Properties.getString('userName');
-
 Titanium.UI.setBackgroundColor('#fff'); 
-
-
 
 tabGroup = Ti.UI.createTabGroup()
 win1 = Ti.UI.createWindow
@@ -27,6 +22,8 @@ setButton.addEventListener 'click',(e)->
     url: 'connect.js'
   Ti.App.userName = nameField.value
   Ti.App.channelName = channelField.value
+  Ti.App.Properties.setString('userName', nameField.value);
+  Ti.App.Properties.setString('channelName', channelField.value);
   tab1.open(connectWindow)
 
 #setup imput
@@ -40,7 +37,7 @@ nameField = Ti.UI.createTextField
   height:100
   hintText:'なまえ'
   borderStyle:Titanium.UI.INPUT_BORDERSTYLE_BEZEL
-
+  value:Ti.App.Properties.getString('userName');
 
 channelField = Ti.UI.createTextField
   top:CHANNEL_TOP
@@ -48,6 +45,7 @@ channelField = Ti.UI.createTextField
   height:100
   hintText:'あいことば'
   borderStyle:Ti.UI.INPUT_BORDERSTYLE_ROUNDER
+  value:Ti.App.Properties.getString('channelName');
 
 
 win1.add(setButton)
